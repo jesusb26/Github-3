@@ -1,8 +1,8 @@
 {
-  "name": "Github-3",
+  "name": "mi-proyecto",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest"  // O el comando adecuado para tus pruebas
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^27.0.0"
