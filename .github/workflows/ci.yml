@@ -3,11 +3,8 @@ name: Node.js CI
 on:
   push:
     branches:
-      - main  # Puede ser cualquier rama que estés usando
-  pull_request:
-    branches:
-      - main  # Esto activará el workflow también para los pull requests
-
+      - main  # ejecuta pruebas automaticas al hacer un push
+ 
 jobs:
   build:
     runs-on: ubuntu-latest  # Especifica el entorno de ejecución (puedes usar otros como windows-latest o macos-latest)
