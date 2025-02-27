@@ -7,11 +7,11 @@ on:
  
 jobs:
   build:
-    runs-on: ubuntu-latest  # Especifica el entorno de ejecución (puedes usar otros como windows-latest o macos-latest)
+    runs-on: ubuntu-latest  
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2  # Clona tu repositorio en el runner
+        uses: actions/checkout@v2  
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -19,7 +19,7 @@ jobs:
           node-version: '14'  # Especifica la versión de Node.js que estás utilizando
 
       - name: Install dependencies
-        run: npm install  # Instala las dependencias de tu proyecto (asegúrate de tener un package.json en tu repo)
+        run: npm install  # Instala las dependencias 
 
       - name: Run tests
         run: npm test  # Ejecuta tus pruebas usando npm
