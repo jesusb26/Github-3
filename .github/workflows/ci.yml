@@ -3,7 +3,10 @@ name: Node.js CI
 on:
   push:
     branches:
-      - main  # ejecuta pruebas automaticas al hacer un push
+      - main  # Se ejecuta cuando se hace push en main
+  pull_request:
+    branches:
+      - main  # También se ejecuta cuando hay un Pull Request en main
  
 jobs:
   build:
